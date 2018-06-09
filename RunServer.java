@@ -1,4 +1,4 @@
-package 
+// package LAN_comm;
 import java.io.*;
 
 public class RunServer{
@@ -29,7 +29,7 @@ public class RunServer{
 				    	System.out.println("Still waiting for client...");
 				    
 				    inputLine   = sender.getLine(); //getClientReader().readLine();
-				    begin       = inputLine.equals(String.valueOf(Sender.BEGIN));
+				    begin       = inputLine.equals(String.valueOf(Commands.BEGIN));
 				    Thread.sleep(waitForBegin);
 
 				}
