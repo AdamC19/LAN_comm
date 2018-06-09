@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class Receiver extends Object{
 
-	private static String defaultDirPath 	= "C:\\Users\\acordingley\\Documents\\Adam_Cordingley_2018\\";
+	private static String defaultDirPath 	= "C:\\Users\\acordingley\\Documents\\";
 	private static String defaultFilePath	= defaultDirPath + "data_output.txt";
 	private static final int BEGIN 			= 0xA5;
 
@@ -52,6 +52,7 @@ public class Receiver extends Object{
 			System.out.println("Access to the file was denied by security manager :(");
 		}catch (Exception e) {
 			System.out.println("Error occurred :(");
+			e.printStackTrace();
 		}
 		
 	}
